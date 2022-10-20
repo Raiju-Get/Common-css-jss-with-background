@@ -1,0 +1,37 @@
+.webgl-content * {border: 0; margin: 0; padding: 0; overflow: auto !important;}
+.webgl-content {overflow: auto !important; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.webgl-content .footer {margin-top: 5px; height: 38px; line-height: 38px; font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 18px;}
+.placeholder{width: 100%;height: auto;background-size: cover;border-radius: 5px;}
+@media  (min-width: 450px) { 
+    .webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+    .webgl-content .logo {background: url('./chimp-bar.gif') no-repeat center / contain; width: 177.69px; height: 150px; margin-top: -40px;}
+    .webgl-content .progress {height: 40px; width: 450px; margin-top: 90px;}
+    .webgl-content .progress .empty {background: url('./progressEmpty.png') no-repeat right / cover; float: right; width: 100%; height: 100%; display: inline-block;}
+    .webgl-content .progress .full {background: url('./progressFull.png') no-repeat left / cover; float: left; width: 0%; height: 100%; display: inline-block;}
+
+
+    .webgl-content .footer .webgl-logo, .title, .fullscreen { display: inline-block; background: transparent center no-repeat;}
+    .webgl-content .footer .title {display: none;} 
+   
+    .webgl-content .footer .fullscreen {background-image: url('fullscreen.png'); width: 38px; float: right;height: 100%; margin-right: 25px;}
+   
+   .webgl-content .footer::after{
+        content: "Full Screen";
+    }
+}
+
+ 
+@media (max-width: 450px) {
+    .webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+    .webgl-content .logo {background: url('./chimp-bar.gif') no-repeat center / contain; width: 100.69px; height: 85px; margin-top: -10px;}
+    .webgl-content .progress {height: 15px; width: 168.75px; margin-top: 50px;}
+    .webgl-content .progress .empty {background: url('./progressEmpty.png') no-repeat right / cover; float: right; width: 100%; height: 100%; display: inline-block;}
+    .webgl-content .progress .full {background: url('./progressFull.png') no-repeat left / cover; float: left; width: 0%; height: 100%; display: inline-block;}
+
+    .title{
+        display: none;
+    }
+    .webgl-content .footer::after{
+        content: "Please use landscape mode to use fullscreen.";
+    }
+}
